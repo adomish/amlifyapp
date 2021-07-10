@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "amlifyapp9d179073": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
