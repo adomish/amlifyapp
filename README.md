@@ -73,3 +73,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 GraphQL endpoint: https://kpxrsnar7bczbdptpozsok6sy4.appsync-api.us-east-2.amazonaws.com/graphql
 GraphQL API KEY: da2-gu7qmwqmg5hj5nzvcblhpi2jbi
 
+# 2021/7/30
+## エラー
+1. Cannot read property 'getState' of null
+
+default functionないでレフを使わない
+
+2. but got: object.
+
+defaultfunctionないで使う
+
+### とりあえずたくさん書いて理解する
+
+# 2021/8/1
+## スクロールで物体を横回転させる
+```
+# positionが軸を一つでも指定しないと動かない
+<PerspectiveCamera makeDefault position={[0, 0, 10]} />
+```
+1. react-springを学ぶ
+2. 縦にスクロールすると横にスライドするanimation
