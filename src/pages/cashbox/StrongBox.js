@@ -157,8 +157,6 @@ export default function StrongBox() {
     setTotal(totalList)
   }, [boxs]);
 
-  console.log(total)
-
   return (
     <div>
       <h1>小口金操作</h1>
