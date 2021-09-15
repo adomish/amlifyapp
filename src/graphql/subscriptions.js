@@ -37,3 +37,66 @@ export const onDeleteNote = /* GraphQL */ `
     }
   }
 `;
+export const onCreateCashBox = /* GraphQL */ `
+  subscription OnCreateCashBox {
+    onCreateCashBox {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateCashBox = /* GraphQL */ `
+  subscription OnUpdateCashBox {
+    onUpdateCashBox {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteCashBox = /* GraphQL */ `
+  subscription OnDeleteCashBox {
+    onDeleteCashBox {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;

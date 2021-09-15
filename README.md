@@ -93,3 +93,45 @@ defaultfunctionないで使う
 ```
 1. react-springを学ぶ
 2. 縦にスクロールすると横にスライドするanimation
+# 2021/8/4
+1. schema.Graphqlを更新
+2. backendを更新
+3. Graphqlでデータの更新や取得のテスト
+4. 小口金の処理 
+# 2021/8/17
+1. inputの続き
+2. 処理する前にjsonでデータの確認
+3. テスト
+4. 見た目を整える(軽く)
+# 2021/8/18
+1. 作ったリストをhtmlのforで出力
+# 2021/8/25
+* 小口金のformdataの作成
+    * coinをkeyにしたobjectの作成(valueとkeyが一致するかを確認)
+        * mapでそれぞれのlistを作成
+          * onchangeしたkeyとvalueを取得する
+              * filterを使ってkeyとvalueを取得
+# 2021/8/26
+* filterで作った単体のobjectをlistにする
+    * fakelistに単体の値を差し込む
+# 2021/8/31
+* fakelistを正しい順番に並び替える
+    * fakelistにdefaultの値を設定する
+### 発見
+* objectはindex番号を振ると順番に表示されるが、何もないとバラバラになる
+# 2021/9/3
+### 発見
+* objectの中にobjectを入れるとsetstateできない(何か方法はありそう)
+* valueの中に何か入れると動かせなくなるから初期値の設定はdefaultvalueを使う
+### やること
+1. amplifybackendの更新
+    * このサイトで更新https://aws.amazon.com/jp/getting-started/hands-on/build-react-app-amplify-graphql/module-four/
+        * 送信元のデータの形式をチェック
+2. 登録後のリストの表示 
+3. 全てをmapに集約
+4. validationの実装
+    * マイナスの場合は同時にプラスが存在しないようにする
+# 2021/9/10
+ページを更新しないとboxsが更新されないので、boxがundifindeの時
+今日の日付を仮で入れる.
+undifindeじゃない場合にそのまま出力する。

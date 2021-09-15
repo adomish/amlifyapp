@@ -6,6 +6,7 @@ import PrespectiveCameraScense from './pages/PerspectiveCameraScense';
 import Scense from './pages/Scense';
 import Scroll from './pages/Scroll';
 import Three from './pages/Three';
+import Strong from './pages/cashbox/StrongBox'
 
 const App = () => {
   return (
@@ -28,6 +29,9 @@ const App = () => {
             <li>
               <Link to='/scroll'>scroll</Link>
             </li>
+            <li>
+              <Link to='/strongbox'>コグチキン操作</Link>
+            </li>
           </ul>
 
           <hr />
@@ -47,6 +51,9 @@ const App = () => {
             </Route>
             <Route path='/scroll'>
               <Scroll />
+            </Route>
+            <Route path='/strongbox'>
+              <Strong/>
             </Route>
           </Switch>
         </div>

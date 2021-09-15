@@ -32,3 +32,52 @@ export const listNotes = /* GraphQL */ `
     }
   }
 `;
+export const getCashBox = /* GraphQL */ `
+  query GetCashBox($id: ID!) {
+    getCashBox(id: $id) {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listCashBoxes = /* GraphQL */ `
+  query ListCashBoxes(
+    $filter: ModelCashBoxFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listCashBoxes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        name
+        description
+        depandpay
+        one
+        five
+        ten
+        fifty
+        handred
+        fivehandred
+        thousand
+        fivethousand
+        tenthousand
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;

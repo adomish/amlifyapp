@@ -46,3 +46,75 @@ export const deleteNote = /* GraphQL */ `
     }
   }
 `;
+export const createCashBox = /* GraphQL */ `
+  mutation CreateCashBox(
+    $input: CreateCashBoxInput!
+    $condition: ModelCashBoxConditionInput
+  ) {
+    createCashBox(input: $input, condition: $condition) {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateCashBox = /* GraphQL */ `
+  mutation UpdateCashBox(
+    $input: UpdateCashBoxInput!
+    $condition: ModelCashBoxConditionInput
+  ) {
+    updateCashBox(input: $input, condition: $condition) {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteCashBox = /* GraphQL */ `
+  mutation DeleteCashBox(
+    $input: DeleteCashBoxInput!
+    $condition: ModelCashBoxConditionInput
+  ) {
+    deleteCashBox(input: $input, condition: $condition) {
+      id
+      name
+      description
+      depandpay
+      one
+      five
+      ten
+      fifty
+      handred
+      fivehandred
+      thousand
+      fivethousand
+      tenthousand
+      createdAt
+      updatedAt
+    }
+  }
+`;

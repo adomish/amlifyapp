@@ -4,3 +4,19 @@ type Note @model {
   description: String
   image: String
 }
+
+type CashBox @model {
+  id: ID!
+  name: String!
+  description: String!
+  depandpay: Boolean!
+  one: Int
+  five: Int
+  ten: Int
+  fifty: Int
+  handred: Int
+  fivehandred: Int
+  thousand: Int
+  fivethousand:Int
+  tenthousand: Int
+}
