@@ -135,3 +135,10 @@ defaultfunctionないで使う
 ページを更新しないとboxsが更新されないので、boxがundifindeの時
 今日の日付を仮で入れる.
 undifindeじゃない場合にそのまま出力する。
+# 2021/9/20
+1. api側で請求書pdfを作成
+2. pdfをjpegに保存する
+3. pdfをgetするエンドポイントを作る
+4. jpegをreact側に送信
+5. react側でjpegを受け取り。
+6. 表示する
